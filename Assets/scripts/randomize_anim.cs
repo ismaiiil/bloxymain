@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class XAXAXA : MonoBehaviour {
+public class randomize_anim : MonoBehaviour {
 	public Animator animator;
 	// Use this for initialization
 	void Start()

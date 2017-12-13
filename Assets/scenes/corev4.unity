@@ -3486,6 +3486,11 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 54048751187321202, guid: 1a69996efeed1a0448c5cd1ae255f74e,
+        type: 2}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114624271196120090, guid: 1a69996efeed1a0448c5cd1ae255f74e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1a69996efeed1a0448c5cd1ae255f74e, type: 2}

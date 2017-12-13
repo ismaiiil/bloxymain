@@ -3487,11 +3487,21 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    - target: {fileID: 54048751187321202, guid: 1a69996efeed1a0448c5cd1ae255f74e,
+        type: 2}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+=======
+>>>>>>> mael
     - target: {fileID: 23439984339241514, guid: 1a69996efeed1a0448c5cd1ae255f74e,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 42fe0a45b3b2e124186a490a4561a4ad, type: 2}
+<<<<<<< HEAD
 =======
     - target: {fileID: 54048751187321202, guid: 1a69996efeed1a0448c5cd1ae255f74e,
         type: 2}
@@ -3499,6 +3509,9 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
 >>>>>>> f98369e0976c46de54177f2ea623e9e9aba74994
+=======
+>>>>>>> master
+>>>>>>> mael
     m_RemovedComponents:
     - {fileID: 114624271196120090, guid: 1a69996efeed1a0448c5cd1ae255f74e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1a69996efeed1a0448c5cd1ae255f74e, type: 2}
@@ -4946,7 +4959,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1086241541}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> mael
 --- !u!114 &1086241549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4959,7 +4975,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube_enter: {fileID: 0}
+<<<<<<< HEAD
 >>>>>>> f98369e0976c46de54177f2ea623e9e9aba74994
+=======
+=======
+>>>>>>> master
+>>>>>>> mael
 --- !u!1 &1097843014 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1943775775167518, guid: 1a69996efeed1a0448c5cd1ae255f74e,

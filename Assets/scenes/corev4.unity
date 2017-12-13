@@ -2184,7 +2184,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 440846708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.33, y: 1.88, z: -0.87}
+  m_LocalPosition: {x: -2.87, y: 2.79, z: -0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2949,7 +2949,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0f078adfbd110a7011005aba44295342, type: 2}
+  - {fileID: 2100000, guid: 2c78b1c7edcff704b96ded6ff14cc7ae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3486,32 +3486,11 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     - target: {fileID: 54048751187321202, guid: 1a69996efeed1a0448c5cd1ae255f74e,
         type: 2}
       propertyPath: m_Interpolate
       value: 0
       objectReference: {fileID: 0}
-=======
->>>>>>> mael
-    - target: {fileID: 23439984339241514, guid: 1a69996efeed1a0448c5cd1ae255f74e,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 42fe0a45b3b2e124186a490a4561a4ad, type: 2}
-<<<<<<< HEAD
-=======
-    - target: {fileID: 54048751187321202, guid: 1a69996efeed1a0448c5cd1ae255f74e,
-        type: 2}
-      propertyPath: m_Interpolate
-      value: 0
-      objectReference: {fileID: 0}
->>>>>>> f98369e0976c46de54177f2ea623e9e9aba74994
-=======
->>>>>>> master
->>>>>>> mael
     m_RemovedComponents:
     - {fileID: 114624271196120090, guid: 1a69996efeed1a0448c5cd1ae255f74e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1a69996efeed1a0448c5cd1ae255f74e, type: 2}
@@ -4958,11 +4937,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1086241541}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> mael
 --- !u!114 &1086241549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4975,12 +4949,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube_enter: {fileID: 0}
-<<<<<<< HEAD
->>>>>>> f98369e0976c46de54177f2ea623e9e9aba74994
-=======
-=======
->>>>>>> master
->>>>>>> mael
 --- !u!1 &1097843014 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1943775775167518, guid: 1a69996efeed1a0448c5cd1ae255f74e,
@@ -5662,7 +5630,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 0}
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -7429,11 +7397,6 @@ Prefab:
       propertyPath: m_TagString
       value: tile_end
       objectReference: {fileID: 0}
-    - target: {fileID: 23894262394936136, guid: 4fc816911cc732b4f84a74fc06df57a6,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 42fe0a45b3b2e124186a490a4561a4ad, type: 2}
     m_RemovedComponents:
     - {fileID: 95753465307888516, guid: 4fc816911cc732b4f84a74fc06df57a6, type: 2}
     - {fileID: 114813888910214342, guid: 4fc816911cc732b4f84a74fc06df57a6, type: 2}

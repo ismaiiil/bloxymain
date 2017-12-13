@@ -14,11 +14,11 @@ public class cube_stopanim : MonoBehaviour {
 		cube_enter.enabled = false;
 	}
 	void OnTriggerEnter(Collider other){
-		if (other.gameObject.tag == "tile_normal") {
-			StartCoroutine (ExecuteAfterTime (2));
-		}
 		if (other.gameObject.tag == "deadzone") {
-			cube_enter.enabled = true;
+			cube_enter.SetBool ("is_enter", true);
+		}
+		if (other.gameObject.tag == "tile_normal") {
+			cube_enter.SetBool ("is_enter", false);
 		}
 	}
 

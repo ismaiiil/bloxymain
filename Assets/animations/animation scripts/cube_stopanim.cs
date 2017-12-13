@@ -7,6 +7,7 @@ public class cube_stopanim : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		cube_enter = GetComponentInParent<Animator> ();
+		cube_enter.Play ("cube_enter");
 	}
 
 	IEnumerator ExecuteAfterTime(float time){

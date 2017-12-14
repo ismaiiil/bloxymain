@@ -4314,6 +4314,26 @@ Prefab:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 20695653661599740, guid: 0ad8fb24c42fc1841837740539dc4962,
+        type: 2}
+      propertyPath: m_RenderingPath
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20695653661599740, guid: 0ad8fb24c42fc1841837740539dc4962,
+        type: 2}
+      propertyPath: m_OcclusionCulling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20695653661599740, guid: 0ad8fb24c42fc1841837740539dc4962,
+        type: 2}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20695653661599740, guid: 0ad8fb24c42fc1841837740539dc4962,
+        type: 2}
+      propertyPath: m_AllowMSAA
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ad8fb24c42fc1841837740539dc4962, type: 2}
   m_IsPrefabParent: 0

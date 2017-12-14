@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.168917, g: 0.3968354, b: 0.21127123, a: 1}
+  m_IndirectSpecularColor: {r: 0.168917, g: 0.39683542, b: 0.21127123, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1810,7 +1810,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.81960785, g: 1, b: 0, a: 1}
   m_Intensity: 8
-  m_Range: 2
+  m_Range: 8
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -3045,7 +3045,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.81960785, g: 1, b: 0, a: 1}
   m_Intensity: 8
-  m_Range: 8
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -3110,7 +3110,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.81960785, g: 1, b: 0, a: 1}
   m_Intensity: 8
-  m_Range: 2
+  m_Range: 8
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -3644,8 +3644,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1312186865}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -20.5, y: -2.47, z: -0.87999916}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -1.8899997, y: -2.47, z: -0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 894091091}
@@ -3738,7 +3738,7 @@ Transform:
   - {fileID: 767781666}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1001 &1321065603
 Prefab:
   m_ObjectHideFlags: 0
@@ -3827,8 +3827,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1337653464}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -20.5, y: -2.47, z: -0.88}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -1.89, y: -2.47, z: -0.38000083}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1874602297}
@@ -3842,7 +3842,7 @@ Transform:
   - {fileID: 2009080384}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1001 &1349906694
 Prefab:
   m_ObjectHideFlags: 0
@@ -6334,7 +6334,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.81960785, g: 1, b: 0, a: 1}
   m_Intensity: 8
-  m_Range: 8
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:

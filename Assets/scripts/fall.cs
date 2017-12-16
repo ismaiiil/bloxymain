@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class fall : MonoBehaviour {
 	public GameObject player;
-	public bool falls;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,7 +13,6 @@ public class fall : MonoBehaviour {
 		if (other.gameObject.tag == "tile_fall") {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
-			falls = true;
 			player.GetComponent<Collider> ().isTrigger = false;
 		}
 	}

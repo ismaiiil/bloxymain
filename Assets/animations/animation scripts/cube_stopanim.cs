@@ -10,19 +10,22 @@ public class cube_stopanim : MonoBehaviour {
 		cube_enter.Play ("cube_enter");
 	}
 
-	IEnumerator delayresp(float time){
+	IEnumerator delayanim(float time){
 		yield return new WaitForSeconds(time);
-		cube_enter.SetBool ("is_enter", true);
-	}
-	void OnCollisionEnter(Collision other){
-		if (other.gameObject.tag == "deadzone") {
-			cube_enter.SetBool ("is_enter", true);
-		}
-
-	}
+		cube_enter.SetBool ("is_enter",false);
+		Debug.Log("animating respawn");
+	
+			}
+//	void OnCollisionEnter(Collision other){
+//		if (other.gameObject.tag == "deadzone") {
+//			StartCoroutine (delayanim (1.0f));
+//		}
+//
+//	}
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.tag == "tile_normal") {
-			cube_enter.SetBool ("is_enter", false);
+			cube_enter.SetBool ("is_enter",false);
+			Debug.Log("cube enter false");
 		}
 	}
 

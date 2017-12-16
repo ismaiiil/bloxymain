@@ -12,6 +12,7 @@ public class end_level : MonoBehaviour {
 		if (other.gameObject.tag == "tile_end") {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
+			player.GetComponent<Collider> ().isTrigger = false;
 		}
 	}
 	

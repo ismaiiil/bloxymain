@@ -8,14 +8,20 @@ public class dead_respawn : MonoBehaviour {
 	void Start () {
 		
 	}
-	void OnTriggerEnter(Collider other){
+	void OnCollisionEnter(Collision other){
 		if (other.gameObject.tag == "deadzone") {
 			player.GetComponent<Rigidbody>().useGravity = false;
 			player.GetComponent<Rigidbody>().isKinematic = true;
 			player.transform.position = new Vector3 (0.495f,-0.165f, -2.993f);
 			player.transform.localEulerAngles = new Vector3 (0, 0, 0);
+			player.GetComponent<Collider> ().isTrigger = true;
+
 		
 	}
+	}
+	IEnumerator delayresp(float time){
+		yield return new WaitForSeconds (time);
+
 	}
 	
 	// Update is called once per frame

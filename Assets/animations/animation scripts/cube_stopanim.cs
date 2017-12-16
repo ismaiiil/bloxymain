@@ -10,14 +10,17 @@ public class cube_stopanim : MonoBehaviour {
 		cube_enter.Play ("cube_enter");
 	}
 
-	IEnumerator ExecuteAfterTime(float time){
+	IEnumerator delayresp(float time){
 		yield return new WaitForSeconds(time);
-		cube_enter.enabled = false;
+		cube_enter.SetBool ("is_enter", true);
 	}
-	void OnTriggerEnter(Collider other){
+	void OnCollisionEnter(Collision other){
 		if (other.gameObject.tag == "deadzone") {
 			cube_enter.SetBool ("is_enter", true);
 		}
+
+	}
+	void OnTriggerEnter(Collider other){
 		if (other.gameObject.tag == "tile_normal") {
 			cube_enter.SetBool ("is_enter", false);
 		}

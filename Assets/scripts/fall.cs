@@ -14,6 +14,7 @@ public class fall : MonoBehaviour {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
 			falls = true;
+			player.GetComponent<Collider> ().isTrigger = false;
 		}
 	}
 	

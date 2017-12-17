@@ -7,7 +7,8 @@ public class move_cuboid : MonoBehaviour {
 	public float rotationPeriod = 0.3f;		
 	Vector3 scale;							
 
-	bool isRotate = false;					
+	bool isRotate = false;
+	public bool shouldmove;
 	float directionX = 0;				
 	float directionZ = 0;					
 
@@ -16,12 +17,17 @@ public class move_cuboid : MonoBehaviour {
 	float rotationTime = 0;			
 	float radius = 1;					
 	Quaternion fromRotation;			
-	Quaternion toRotation;				
+	Quaternion toRotation;		
+
+	public Animator cube_enter;
+	public Rigidbody cube;
+	public AnimationClip cube_anim;
 
 
 	void Start () {
 
-
+		cube_enter = GetComponentInParent<Animator> ();
+		cube = GetComponent<Rigidbody> ();
 		scale = transform.lossyScale;
 
 
@@ -29,14 +35,26 @@ public class move_cuboid : MonoBehaviour {
 
 
 	void Update () {
-
+		
+		if (cube_enter.GetBool ("is_enter") == true) {
+			shouldmove = false;			
+		}
+		else if(cube.useGravity == true){
+			shouldmove = false;
+		}
+		else if(cube_enter.GetCurrentAnimatorStateInfo(0).IsName("cube_enter")){
+			shouldmove = false;
+		}else {
+			shouldmove = true;
+		}
 		float x = 0;
 		float y = 0;
 
-	
-		x = Input.GetAxisRaw ("Horizontal");
-		if (x == 0) {
-			y = Input.GetAxisRaw ("Vertical");
+		if (shouldmove){
+			x = Input.GetAxisRaw ("Horizontal");
+			if (x == 0) {
+				y = Input.GetAxisRaw ("Vertical");
+			}
 		}
 
 
@@ -57,7 +75,7 @@ public class move_cuboid : MonoBehaviour {
 
 	void FixedUpdate() {
 
-		if (isRotate) {
+		if ((isRotate)) {
 
 			rotationTime += Time.fixedDeltaTime;								
 			float ratio = Mathf.Lerp(0, 1, rotationTime / rotationPeriod);			

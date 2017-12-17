@@ -147,29 +147,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 33320782743199634, guid: 0ad8fb24c42fc1841837740539dc4962,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: f518411aa3c38c0458adb00f9aafe928, type: 3}
-    - target: {fileID: 114216842628104198, guid: 0ad8fb24c42fc1841837740539dc4962,
-        type: 2}
-      propertyPath: tbanim
-      value: 
-      objectReference: {fileID: 574007485}
-    - target: {fileID: 114216842628104198, guid: 0ad8fb24c42fc1841837740539dc4962,
-        type: 2}
-      propertyPath: cube_anim
-      value: 
-      objectReference: {fileID: 7400000, guid: 3ae0198ca75aa6543aa115f5385ee0f5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ad8fb24c42fc1841837740539dc4962, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &574007485 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1715463649668358, guid: 0ad8fb24c42fc1841837740539dc4962,
-    type: 2}
-  m_PrefabInternal: {fileID: 341308836}
 --- !u!1001 &668050857
 Prefab:
   m_ObjectHideFlags: 0
@@ -208,18 +188,6 @@ Prefab:
     - target: {fileID: 4308645250953680, guid: 704018cbaa2e9b84bb3e1e56517b64c3, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4308645250953680, guid: 704018cbaa2e9b84bb3e1e56517b64c3, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 4308645250953680, guid: 704018cbaa2e9b84bb3e1e56517b64c3, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.99200004
-      objectReference: {fileID: 0}
-    - target: {fileID: 4308645250953680, guid: 704018cbaa2e9b84bb3e1e56517b64c3, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.013
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 704018cbaa2e9b84bb3e1e56517b64c3, type: 2}

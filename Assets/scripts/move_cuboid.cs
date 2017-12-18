@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class move_cuboid : MonoBehaviour {
 
 	public float rotationPeriod = 0.3f;		
@@ -10,7 +12,7 @@ public class move_cuboid : MonoBehaviour {
 	bool isRotate = false;
 	public bool shouldmove;
 	float directionX = 0;				
-	float directionZ = 0;					
+	float directionZ = 0;	
 
 	float startAngleRad = 0;				
 	Vector3 startPos;				
@@ -23,18 +25,23 @@ public class move_cuboid : MonoBehaviour {
 	public Rigidbody cube;
 	public AnimationClip cube_anim;
 
+	public int score;
+	public Text Score_text;
+
 
 	void Start () {
 
 		cube_enter = GetComponentInParent<Animator> ();
 		cube = GetComponent<Rigidbody> ();
 		scale = transform.lossyScale;
-
+		score = 0;
 
 	}
 
 
 	void Update () {
+
+		Score_text.text = "Score: " + score.ToString ();
 		
 		if (cube_enter.GetBool ("is_enter") == true) {
 			shouldmove = false;			
@@ -69,7 +76,8 @@ public class move_cuboid : MonoBehaviour {
 			transform.rotation = fromRotation;										
 			setRadius();															
 			rotationTime = 0;															
-			isRotate = true;															
+			isRotate = true;
+			score++;
 		}
 	}
 

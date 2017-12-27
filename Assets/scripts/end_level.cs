@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class end_level : MonoBehaviour {
 	public GameObject player;
@@ -13,6 +14,7 @@ public class end_level : MonoBehaviour {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
 			player.GetComponent<Collider> ().isTrigger = false;
+			//SceneManager.LoadScene("level2");
 		}
 	}
 	

@@ -14,7 +14,7 @@ public class end_level : MonoBehaviour {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
 			player.GetComponent<Collider> ().isTrigger = false;
-			//SceneManager.LoadScene("level2");
+			SceneManager.LoadScene("level2");
 		}
 	}
 	

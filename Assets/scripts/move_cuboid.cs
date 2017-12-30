@@ -25,8 +25,8 @@ public class move_cuboid : MonoBehaviour {
 	public Rigidbody cube;
 	public AnimationClip cube_anim;
 
-	public int score;
-	public Text Score_text;
+	public int moves;
+	public Text moves_text;
 
 
 	void Start () {
@@ -34,14 +34,14 @@ public class move_cuboid : MonoBehaviour {
 		cube_enter = GetComponentInParent<Animator> ();
 		cube = GetComponent<Rigidbody> ();
 		scale = transform.lossyScale;
-		score = 0;
+		moves = 0;
 
 	}
 
 
 	void Update () {
 
-		Score_text.text = "Score: " + score.ToString ();
+		moves_text.text = "Moves: " + moves.ToString ();
 		
 		if (cube_enter.GetBool ("is_enter") == true) {
 			shouldmove = false;			
@@ -77,7 +77,7 @@ public class move_cuboid : MonoBehaviour {
 			setRadius();															
 			rotationTime = 0;															
 			isRotate = true;
-			score++;
+			moves++;
 		}
 	}
 

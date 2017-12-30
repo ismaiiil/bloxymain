@@ -8662,6 +8662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1408729535157284}
+  nextlevel: 0
 --- !u!114 &114143602953767676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8738,8 +8739,8 @@ MonoBehaviour:
   cube_enter: {fileID: 0}
   cube: {fileID: 0}
   cube_anim: {fileID: 7400000, guid: 3ae0198ca75aa6543aa115f5385ee0f5, type: 2}
-  score: 0
-  Score_text: {fileID: 0}
+  moves: 0
+  moves_text: {fileID: 0}
 --- !u!114 &114250584896527182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9352,6 +9353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1408729535157284}
+  nextlevel: 0
 --- !u!114 &114828163170957386
 MonoBehaviour:
   m_ObjectHideFlags: 1

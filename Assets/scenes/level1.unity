@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -340,7 +340,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114216842628104198, guid: 0ad8fb24c42fc1841837740539dc4962,
         type: 2}
-      propertyPath: Score_text
+      propertyPath: moves_text
       value: 
       objectReference: {fileID: 974195603}
     m_RemovedComponents: []

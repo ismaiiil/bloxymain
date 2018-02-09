@@ -9,6 +9,7 @@ TagManager:
   - tile_fall
   - deadzone
   - tile_end
+  - wood
   layers:
   - Default
   - TransparentFX

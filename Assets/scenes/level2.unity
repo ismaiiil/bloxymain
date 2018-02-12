@@ -148,6 +148,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114923456252456694, guid: 53a17ad91ae79044587ec58dd784d39f,
+        type: 2}
+      propertyPath: waterMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114923456252456694, guid: 53a17ad91ae79044587ec58dd784d39f,
+        type: 2}
+      propertyPath: disablePixelLights
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114923456252456694, guid: 53a17ad91ae79044587ec58dd784d39f,
+        type: 2}
+      propertyPath: reflectLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 114923456252456694, guid: 53a17ad91ae79044587ec58dd784d39f,
+        type: 2}
+      propertyPath: refractLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53a17ad91ae79044587ec58dd784d39f, type: 2}
   m_IsPrefabParent: 0

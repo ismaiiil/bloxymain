@@ -15,7 +15,6 @@ public class break_wood : MonoBehaviour
 
     void Start()
     {
-
         player = GameObject.FindGameObjectWithTag("Player");
         originalposition = gameObject.transform.position;
         originalquaternion = gameObject.transform.rotation;
@@ -31,7 +30,7 @@ public class break_wood : MonoBehaviour
             makewoodfall();
             makeplayerfall();
             StartCoroutine(Delayinstantiate(1.5f));
-            StartCoroutine(DelayDestroy(1f));
+            //StartCoroutine(DelayDestroy(1f));
 
 
 
@@ -50,12 +49,12 @@ public class break_wood : MonoBehaviour
     IEnumerator DelayDestroy(float time)
     {
         yield return new WaitForSeconds(time);
-        Destroy(this.gameObject);
+        Destroy(gameObject);
         Debug.Log(gameObject + "destroyed");
     }
 
 
-        void makeplayerfall() {
+    void makeplayerfall() {
         player.GetComponent<Rigidbody>().useGravity = true;
         player.GetComponent<Rigidbody>().isKinematic = false;
         player.GetComponent<Collider>().isTrigger = false;
@@ -68,9 +67,10 @@ public class break_wood : MonoBehaviour
             gameObject.GetComponentsInChildren<Rigidbody>()[i].useGravity = true;
             gameObject.GetComponentsInChildren<Rigidbody>()[i].isKinematic = false;
             gameObject.GetComponentsInChildren<Collider>()[i].isTrigger = false;
-            gameObject.GetComponent<Collider>().enabled = false;
+            
 
         }
+        gameObject.GetComponent<Collider>().enabled = false;
     }
 
   

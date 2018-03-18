@@ -1080,19 +1080,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4552321534020366, guid: 78183485a91a7714eb099330ae1d32df, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114067600094375782, guid: 78183485a91a7714eb099330ae1d32df,
         type: 2}
       propertyPath: player
       value: 
       objectReference: {fileID: 2100317451}
-    - target: {fileID: 114067600094375782, guid: 78183485a91a7714eb099330ae1d32df,
-        type: 2}
-      propertyPath: wood
-      value: 
-      objectReference: {fileID: 1612117172883542, guid: 78183485a91a7714eb099330ae1d32df,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78183485a91a7714eb099330ae1d32df, type: 2}
   m_IsPrefabParent: 0
@@ -13493,9 +13487,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2054072394}
   - {fileID: 1212980189}
   - {fileID: 55653319}
-  - {fileID: 2054072394}
   - {fileID: 536505589}
   - {fileID: 1384764308}
   - {fileID: 439340516}
@@ -27397,7 +27391,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4552321534020366, guid: 78183485a91a7714eb099330ae1d32df, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114067600094375782, guid: 78183485a91a7714eb099330ae1d32df,
         type: 2}
@@ -27408,12 +27402,6 @@ Prefab:
       propertyPath: m_Name
       value: wood plank (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114067600094375782, guid: 78183485a91a7714eb099330ae1d32df,
-        type: 2}
-      propertyPath: wood
-      value: 
-      objectReference: {fileID: 1612117172883542, guid: 78183485a91a7714eb099330ae1d32df,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78183485a91a7714eb099330ae1d32df, type: 2}
   m_IsPrefabParent: 0
@@ -28686,7 +28674,7 @@ Transform:
   - {fileID: 1600460726}
   - {fileID: 66265556}
   m_Father: {fileID: 918550077}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2054072395
 MonoBehaviour:

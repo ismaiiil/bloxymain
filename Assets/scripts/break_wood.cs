@@ -30,7 +30,7 @@ public class break_wood : MonoBehaviour
             makewoodfall();
             makeplayerfall();
             StartCoroutine(Delayinstantiate(1.5f));
-            //StartCoroutine(DelayDestroy(1f));
+            StartCoroutine(DelayDestroy(2f));
 
 
 

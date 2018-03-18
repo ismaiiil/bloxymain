@@ -27402,6 +27402,54 @@ Prefab:
       propertyPath: m_Name
       value: wood plank (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 65392480361259134, guid: 78183485a91a7714eb099330ae1d32df,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da,
+        type: 2}
+    - target: {fileID: 65386398559143864, guid: 78183485a91a7714eb099330ae1d32df,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da,
+        type: 2}
+    - target: {fileID: 65115862036637152, guid: 78183485a91a7714eb099330ae1d32df,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da,
+        type: 2}
+    - target: {fileID: 65379480439396162, guid: 78183485a91a7714eb099330ae1d32df,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da,
+        type: 2}
+    - target: {fileID: 65435674414022920, guid: 78183485a91a7714eb099330ae1d32df,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da,
+        type: 2}
+    - target: {fileID: 65207913210610632, guid: 78183485a91a7714eb099330ae1d32df,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da,
+        type: 2}
+    - target: {fileID: 65172481839731730, guid: 78183485a91a7714eb099330ae1d32df,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da,
+        type: 2}
+    - target: {fileID: 65560595505791116, guid: 78183485a91a7714eb099330ae1d32df,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: ba92fb44336020f40bdf294bb66bc9da,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78183485a91a7714eb099330ae1d32df, type: 2}
   m_IsPrefabParent: 0

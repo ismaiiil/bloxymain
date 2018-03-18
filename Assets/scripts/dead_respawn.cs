@@ -13,7 +13,7 @@ public class dead_respawn : MonoBehaviour {
 	void OnCollisionEnter(Collision other){
 		
 		if ((other.gameObject.tag == "deadzone") && !falls) {
-			StartCoroutine ((delayresp (1.0f)));
+			StartCoroutine ((Delayresp (1.0f)));
 			falls = true;
 			
 		
@@ -25,7 +25,7 @@ public class dead_respawn : MonoBehaviour {
 			falls = false;
 		}
 	}
-	IEnumerator delayresp (float time)
+	IEnumerator Delayresp (float time)
 	{
 		yield return new WaitForSeconds (time);
 		player.GetComponent<Rigidbody> ().useGravity = false;
@@ -34,7 +34,7 @@ public class dead_respawn : MonoBehaviour {
 		player.transform.localEulerAngles = new Vector3 (0, 0, 0);
 		player.GetComponent<Collider> ().isTrigger = true;
 		cube_enter.SetBool ("is_enter", true);
-		Debug.Log ("cube enter true");
+		//Debug.Log ("cube enter true");
 
 
 	}

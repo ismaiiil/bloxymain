@@ -25,7 +25,7 @@ public class cube_stopanim : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.tag == "tile_normal") {
 			cube_enter.SetBool ("is_enter",false);
-			Debug.Log("cube enter false");
+			//Debug.Log("cube enter false");
 		}
 	}
 

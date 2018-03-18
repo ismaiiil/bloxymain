@@ -10,20 +10,20 @@ public class end_level : MonoBehaviour {
 	void Start () {
 		
 	}
-	IEnumerator delaynextlevel (float time){
-		yield return new WaitForSeconds (time);
-		if (SceneManager.GetActiveScene().name == "level1") {
-			SceneManager.LoadScene ("level2");
-		}
-	}
+	//IEnumerator delaynextlevel (float time){
+	//	yield return new WaitForSeconds (time);
+	//	if (SceneManager.GetActiveScene().name == "level1") {
+	//		SceneManager.LoadScene ("level2");
+	//	}
+	//}
 
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.tag == "tile_end") {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
 			player.GetComponent<Collider> ().isTrigger = false;
-			nextlevel = true;
-			StartCoroutine ((delaynextlevel (1.5f)));
+			//nextlevel = true;
+			//StartCoroutine ((delaynextlevel (1.5f)));
 
 		}
 	}

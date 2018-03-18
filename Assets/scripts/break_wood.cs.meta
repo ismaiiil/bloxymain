@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a55097d2c4d6ac6428d4744c1f4a95b4
+timeCreated: 1521374114
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player: {instanceID: 0}
+  - wood: {fileID: 1612117172883542, guid: 78183485a91a7714eb099330ae1d32df, type: 2}
+  - woodcopy: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

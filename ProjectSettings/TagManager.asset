@@ -10,6 +10,7 @@ TagManager:
   - deadzone
   - tile_end
   - wood
+  - toporbot
   layers:
   - Default
   - TransparentFX

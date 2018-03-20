@@ -15,7 +15,7 @@ public class tile_pressed : MonoBehaviour {
 
 	}
 	void OnTriggerEnter(Collider other){
-		if (other.gameObject.tag == "cuboid_colliders") {
+		if ((other.gameObject.tag == "cuboid_colliders")||(other.gameObject.tag == "toporbot")) {
 			anim.SetBool ("ispressed", true);
 		}
 	}
@@ -28,7 +28,8 @@ public class tile_pressed : MonoBehaviour {
 	//}
 	void OnTriggerExit (Collider other)
 	{
-		if (other.gameObject.tag == "cuboid_colliders") {
+		if ((other.gameObject.tag == "cuboid_colliders") || (other.gameObject.tag == "toporbot"))
+        {
 			anim.SetBool ("ispressed", false);
 		}
 

@@ -7,7 +7,7 @@ public class randomize_anim : MonoBehaviour {
 	// Use this for initialization
 	void Start()
 	{
-
+        animator = GetComponent<Animator>();
 		animator.Play(0,-1, Random.value);
 	}
 

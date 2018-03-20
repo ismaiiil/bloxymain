@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class dead_respawn : MonoBehaviour {
 	public GameObject player;
@@ -13,8 +14,9 @@ public class dead_respawn : MonoBehaviour {
 	void OnCollisionEnter(Collision other){
 		
 		if ((other.gameObject.tag == "deadzone") && !falls) {
-			StartCoroutine ((Delayresp (1.0f)));
-			falls = true;
+            StartCoroutine(Delayrestart(1f));
+            //StartCoroutine ((Delayresp (1.0f)));
+            falls = true;
 			
 		
 	}
@@ -25,7 +27,15 @@ public class dead_respawn : MonoBehaviour {
 			falls = false;
 		}
 	}
-	IEnumerator Delayresp (float time)
+
+    IEnumerator Delayrestart(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+
+    }
+    IEnumerator Delayresp (float time)
 	{
 		yield return new WaitForSeconds (time);
 		player.GetComponent<Rigidbody> ().useGravity = false;

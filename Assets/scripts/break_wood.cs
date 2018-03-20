@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class break_wood : MonoBehaviour
 {
@@ -29,8 +30,9 @@ public class break_wood : MonoBehaviour
             
             makewoodfall();
             makeplayerfall();
-            StartCoroutine(Delayinstantiate(1.5f));
-            StartCoroutine(DelayDestroy(2f));
+            StartCoroutine(Delayrestart(1f));
+            //StartCoroutine(Delayinstantiate(1.5f));
+            //StartCoroutine(DelayDestroy(2f));
 
 
 
@@ -52,9 +54,16 @@ public class break_wood : MonoBehaviour
         Destroy(gameObject);
         Debug.Log(gameObject + "destroyed");
     }
+    IEnumerator Delayrestart(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+
+    }
 
 
-    void makeplayerfall() {
+        void makeplayerfall() {
         player.GetComponent<Rigidbody>().useGravity = true;
         player.GetComponent<Rigidbody>().isKinematic = false;
         player.GetComponent<Collider>().isTrigger = false;

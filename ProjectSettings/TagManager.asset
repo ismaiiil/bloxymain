@@ -11,6 +11,8 @@ TagManager:
   - tile_end
   - wood
   - toporbot
+  - round_switch
+  - cross_switch
   layers:
   - Default
   - TransparentFX

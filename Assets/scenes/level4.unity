@@ -965,7 +965,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 39671609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.75, y: 1.47, z: 0.76}
+  m_LocalPosition: {x: 0.466, y: -0.602, z: -5.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2048376923}
@@ -8624,7 +8624,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 63e520341329f44448a412a83e9d1bff, type: 2}
+  - {fileID: 2100000, guid: aaa1612e8d3bffc40b14be3fcc17d140, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8666,7 +8666,7 @@ GameObject:
   - component: {fileID: 639828189}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: round_switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8754,6 +8754,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switched_pressed: 0
   amount: 0.03
+  closebridges: {fileID: 1075236314}
+  counterswitches: {fileID: 0}
 --- !u!1 &641735777
 GameObject:
   m_ObjectHideFlags: 0
@@ -26589,7 +26591,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 63e520341329f44448a412a83e9d1bff, type: 2}
+  - {fileID: 2100000, guid: aaa1612e8d3bffc40b14be3fcc17d140, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

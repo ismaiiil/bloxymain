@@ -7,8 +7,8 @@ public class Switch_script : MonoBehaviour
     public bool switched_pressed;
     public bool change_position;
     public float amount;
-    public GameObject[] bridges;
-    //public GameObject openbridges;
+    public GameObject[] closebridges;
+    public GameObject[] openbridges;
     public GameObject counterswitches;
     public Color initial_color;
     public bool Counterswitch_pressed;
@@ -28,6 +28,7 @@ public class Switch_script : MonoBehaviour
             (other.gameObject.tag == "toporbot")) && switched_pressed == false)
         {
             CloseBridges();
+            OpenBridges();
             gameObject.GetComponent<Renderer>().material.color = Color.green;
             if(change_position == false) {
                 transform.Translate(Vector3.down * amount, Space.World);
@@ -46,9 +47,9 @@ public class Switch_script : MonoBehaviour
 
     void CloseBridges()
     {
-        if (bridges[0] != null )
+        if ((closebridges.Length > 0) && (closebridges[0] != null ))
         {
-            foreach (GameObject bridge in bridges)
+            foreach (GameObject bridge in closebridges)
             {
 
                 Animator[] animators = bridge.GetComponentsInChildren<Animator>();
@@ -61,15 +62,15 @@ public class Switch_script : MonoBehaviour
             }
         }
         else {
-            Debug.Log("No bridge attached to this switch" + gameObject);
+            Debug.Log("No bridge to be closed attached to this switch" + gameObject);
         }
         
     }
     void OpenBridges()
     {
-        if (bridges[0] != null)
+        if ((openbridges.Length > 0) && (openbridges[0] != null))
         {
-            foreach (GameObject bridge in bridges)
+            foreach (GameObject bridge in openbridges)
             {
                 Animator[] animators = bridge.GetComponentsInChildren<Animator>();
 
@@ -82,7 +83,7 @@ public class Switch_script : MonoBehaviour
         }
         else
         {
-            Debug.Log("No bridge attached to this switch" + gameObject);
+            Debug.Log("No bridge to be opened attached to this switch" + gameObject);
         }
     }
     // Update is called once per frame
@@ -96,8 +97,8 @@ public class Switch_script : MonoBehaviour
                 transform.Translate(Vector3.up * amount, Space.World);
                 change_position = false;
             }
-            OpenBridges();
-            Debug.Log("since false i open bridge");
+            //OpenBridges();
+            //Debug.Log("since false i open bridge");
             }
 
 

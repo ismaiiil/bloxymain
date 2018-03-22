@@ -1730,7 +1730,7 @@ Transform:
   m_Children:
   - {fileID: 986342821}
   m_Father: {fileID: 918550077}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &80156557
 Animator:
@@ -3333,9 +3333,11 @@ MonoBehaviour:
   switched_pressed: 0
   change_position: 0
   amount: 0.04
-  bridges: {fileID: 1020159734}
-  openbridges: {fileID: 0}
-  counterswitches: {fileID: 0}
+  closebridges:
+  - {fileID: 1020159734}
+  openbridges:
+  - {fileID: 1075236314}
+  counterswitches: {fileID: 1109574004}
   initial_color: {r: 0, g: 0, b: 0, a: 0}
   Counterswitch_pressed: 0
 --- !u!64 &182124379
@@ -6951,7 +6953,7 @@ Transform:
   m_Children:
   - {fileID: 654128283}
   m_Father: {fileID: 918550077}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &405611619
 Animator:
@@ -10466,9 +10468,11 @@ MonoBehaviour:
   switched_pressed: 0
   change_position: 0
   amount: 0.03
-  bridges: {fileID: 919238557}
-  openbridges: {fileID: 0}
-  counterswitches: {fileID: 1109574004}
+  closebridges:
+  - {fileID: 919238557}
+  openbridges:
+  - {fileID: 0}
+  counterswitches: {fileID: 0}
   initial_color: {r: 0, g: 0, b: 0, a: 0}
   Counterswitch_pressed: 0
 --- !u!1 &640845180
@@ -15111,11 +15115,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 599790999}
+  - {fileID: 405611618}
+  - {fileID: 80156556}
   - {fileID: 1075236315}
   - {fileID: 919238558}
   - {fileID: 1020159735}
-  - {fileID: 405611618}
-  - {fileID: 80156556}
   - {fileID: 2054072394}
   - {fileID: 1384764308}
   - {fileID: 439340516}
@@ -15188,7 +15192,7 @@ Transform:
   - {fileID: 138819716}
   - {fileID: 33210461}
   m_Father: {fileID: 918550077}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &919579904
 Prefab:
@@ -17046,7 +17050,7 @@ Transform:
   - {fileID: 890589335}
   - {fileID: 149160096}
   m_Father: {fileID: 918550077}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1026338550
 Prefab:
@@ -17751,7 +17755,7 @@ Transform:
   - {fileID: 2087178089}
   - {fileID: 769021023}
   m_Father: {fileID: 918550077}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1106871069
 GameObject:
@@ -17888,9 +17892,11 @@ MonoBehaviour:
   switched_pressed: 0
   change_position: 0
   amount: 0.03
-  bridges: {fileID: 1075236314}
-  openbridges: {fileID: 0}
-  counterswitches: {fileID: 639828184}
+  closebridges:
+  - {fileID: 1075236314}
+  openbridges:
+  - {fileID: 0}
+  counterswitches: {fileID: 182124376}
   initial_color: {r: 0, g: 0, b: 0, a: 0}
   Counterswitch_pressed: 0
 --- !u!64 &1109574007

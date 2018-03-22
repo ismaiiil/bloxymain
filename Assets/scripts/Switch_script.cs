@@ -18,6 +18,10 @@ public class Switch_script : MonoBehaviour
     void Start()
     {
         initial_color = gameObject.GetComponent<Renderer>().material.color;
+        if (switched_pressed) {
+            Bridgeoperator();
+        }
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -27,22 +31,27 @@ public class Switch_script : MonoBehaviour
         if ((((other.gameObject.tag == "cuboid_colliders") && (gameObject.tag == "round_switch")) ||
             (other.gameObject.tag == "toporbot")) && switched_pressed == false)
         {
-            CloseBridges();
-            OpenBridges();
-            gameObject.GetComponent<Renderer>().material.color = Color.green;
-            if(change_position == false) {
-                transform.Translate(Vector3.down * amount, Space.World);
-                change_position = true;
-            }
-            switched_pressed = true;
-            if (counterswitches != null)
-            {
-                counterswitches.GetComponent<Switch_script>().switched_pressed = false;
-            }
+            Bridgeoperator();
 
 
         }
 
+    }
+
+    void Bridgeoperator(){
+        CloseBridges();
+        OpenBridges();
+        gameObject.GetComponent<Renderer>().material.color = Color.green;
+        if (change_position == false)
+        {
+            transform.Translate(Vector3.down * amount, Space.World);
+            change_position = true;
+        }
+        switched_pressed = true;
+        if (counterswitches != null)
+        {
+            counterswitches.GetComponent<Switch_script>().switched_pressed = false;
+        }
     }
 
     void CloseBridges()
@@ -66,6 +75,7 @@ public class Switch_script : MonoBehaviour
         }
         
     }
+
     void OpenBridges()
     {
         if ((openbridges.Length > 0) && (openbridges[0] != null))

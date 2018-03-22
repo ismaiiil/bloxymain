@@ -7,8 +7,8 @@ public class Switch_script : MonoBehaviour
     public bool switched_pressed;
     public bool change_position;
     public float amount;
-    public GameObject bridges;
-    public GameObject openbridges;
+    public GameObject[] bridges;
+    //public GameObject openbridges;
     public GameObject counterswitches;
     public Color initial_color;
     public bool Counterswitch_pressed;
@@ -34,7 +34,10 @@ public class Switch_script : MonoBehaviour
                 change_position = true;
             }
             switched_pressed = true;
-            counterswitches.GetComponent<Switch_script>().switched_pressed = false;
+            if (counterswitches != null)
+            {
+                counterswitches.GetComponent<Switch_script>().switched_pressed = false;
+            }
 
 
         }
@@ -43,23 +46,43 @@ public class Switch_script : MonoBehaviour
 
     void CloseBridges()
     {
-        Animator[] animators = bridges.GetComponentsInChildren<Animator>();
-
-        foreach (Animator animator in animators)
+        if (bridges[0] != null )
         {
-            animator.SetBool("switch_closed", true);
-            animator.SetBool("switch_opened", false);
+            foreach (GameObject bridge in bridges)
+            {
+
+                Animator[] animators = bridge.GetComponentsInChildren<Animator>();
+
+                foreach (Animator animator in animators)
+                {
+                    animator.SetBool("switch_closed", true);
+                    animator.SetBool("switch_opened", false);
+                }
+            }
         }
+        else {
+            Debug.Log("No bridge attached to this switch" + gameObject);
+        }
+        
     }
     void OpenBridges()
     {
-        //gameObject.GetComponent<Renderer>().material.color = initial_color;
-        //transform.Translate(Vector3.up * amount, Space.World);
-        Animator[] animators = bridges.GetComponentsInChildren<Animator>();
-        foreach (Animator animator in animators)
+        if (bridges[0] != null)
         {
-            animator.SetBool("switch_closed", false);
-            animator.SetBool("switch_opened", true);
+            foreach (GameObject bridge in bridges)
+            {
+                Animator[] animators = bridge.GetComponentsInChildren<Animator>();
+
+                foreach (Animator animator in animators)
+                {
+                    animator.SetBool("switch_closed", false);
+                    animator.SetBool("switch_opened", true);
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("No bridge attached to this switch" + gameObject);
         }
     }
     // Update is called once per frame

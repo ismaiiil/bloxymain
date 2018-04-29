@@ -7,7 +7,10 @@ public class cube_stopanim : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		cube_enter = GetComponentInParent<Animator> ();
-		cube_enter.Play ("cube_enter");
+        if (cube_enter != null) {
+            cube_enter.Play("cube_enter");
+        }
+		
 	}
 
 	IEnumerator delayanim(float time){
@@ -24,7 +27,10 @@ public class cube_stopanim : MonoBehaviour {
 //	}
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.tag == "tile_normal") {
-			cube_enter.SetBool ("is_enter",false);
+            if (cube_enter != null)
+            { cube_enter.SetBool("is_enter", false);
+            }
+                
 			//Debug.Log("cube enter false");
 		}
 	}

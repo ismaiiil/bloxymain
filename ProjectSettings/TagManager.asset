@@ -13,6 +13,11 @@ TagManager:
   - toporbot
   - round_switch
   - cross_switch
+  - playerpivot
+  - cube1
+  - cube2
+  - raytarget1
+  - raytarget2
   layers:
   - Default
   - TransparentFX
@@ -23,7 +28,7 @@ TagManager:
   - 
   - 
   - physicsfall
-  - 
+  - planedetectors
   - 
   - 
   - 

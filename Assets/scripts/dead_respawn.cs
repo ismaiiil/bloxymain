@@ -23,7 +23,7 @@ public class dead_respawn : MonoBehaviour {
 
 	}
 	void Update(){
-		if (cube_enter.GetBool("is_enter") == true){
+		if ((cube_enter != null) && (cube_enter.GetBool("is_enter") == true)){
 			falls = false;
 		}
 	}

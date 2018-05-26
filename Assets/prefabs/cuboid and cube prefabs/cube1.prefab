@@ -531,8 +531,10 @@ MonoBehaviour:
   moves: 0
   moves_text: {fileID: 0}
   rotationSpeed: 350
+  ismoving: 0
   is_controlled: 0
   initialcolor: {r: 0, g: 0, b: 0, a: 0}
+  initial: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &114164888478851988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -546,9 +548,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube1: {fileID: 0}
   cube2: {fileID: 0}
-  playerprefab: {fileID: 1499730397334824, guid: 50b4386843d010146afe20ea1651f6a7,
+  playerprefab: {fileID: 1499730397334824, guid: 93e7ed071df2a74498aee41dd21946b3,
     type: 2}
   player: {fileID: 0}
+  median: {x: 0, y: 0, z: 0}
 --- !u!114 &114227486221394698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -562,9 +565,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube1: {fileID: 0}
   cube2: {fileID: 0}
-  playerprefab: {fileID: 1499730397334824, guid: 50b4386843d010146afe20ea1651f6a7,
+  playerprefab: {fileID: 1499730397334824, guid: 93e7ed071df2a74498aee41dd21946b3,
     type: 2}
   player: {fileID: 0}
+  median: {x: 0, y: 0, z: 0}
 --- !u!114 &114273370471748986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -578,9 +582,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube1: {fileID: 0}
   cube2: {fileID: 0}
-  playerprefab: {fileID: 1499730397334824, guid: 50b4386843d010146afe20ea1651f6a7,
+  playerprefab: {fileID: 1499730397334824, guid: 93e7ed071df2a74498aee41dd21946b3,
     type: 2}
   player: {fileID: 0}
+  median: {x: 0, y: 0, z: 0}
 --- !u!114 &114355103861649430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -594,9 +599,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube1: {fileID: 0}
   cube2: {fileID: 0}
-  playerprefab: {fileID: 1499730397334824, guid: 50b4386843d010146afe20ea1651f6a7,
+  playerprefab: {fileID: 1499730397334824, guid: 93e7ed071df2a74498aee41dd21946b3,
     type: 2}
   player: {fileID: 0}
+  median: {x: 0, y: 0, z: 0}
 --- !u!114 &114407478594829640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -624,9 +630,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube1: {fileID: 0}
   cube2: {fileID: 0}
-  playerprefab: {fileID: 1499730397334824, guid: 50b4386843d010146afe20ea1651f6a7,
+  playerprefab: {fileID: 1499730397334824, guid: 93e7ed071df2a74498aee41dd21946b3,
     type: 2}
   player: {fileID: 0}
+  median: {x: 0, y: 0, z: 0}
 --- !u!114 &114879343021154916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -640,6 +647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube1: {fileID: 0}
   cube2: {fileID: 0}
-  playerprefab: {fileID: 1499730397334824, guid: 50b4386843d010146afe20ea1651f6a7,
+  playerprefab: {fileID: 1499730397334824, guid: 93e7ed071df2a74498aee41dd21946b3,
     type: 2}
   player: {fileID: 0}
+  median: {x: 0, y: 0, z: 0}

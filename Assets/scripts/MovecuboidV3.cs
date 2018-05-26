@@ -30,13 +30,13 @@ public class MovecuboidV3 : MonoBehaviour
     private Vector3 axis;
     private Vector3 scale;
 
-
-
     public bool is_controlled;
     public Color initialcolor;
     public Quaternion initial;
 
-    void Start()
+    private GameObject UImemory;
+
+    void Awake()
     {
         initialcolor = gameObject.GetComponent<Renderer>().material.color;
 
@@ -53,9 +53,11 @@ public class MovecuboidV3 : MonoBehaviour
 
         cube_animator = GetComponentInParent<Animator>();
         cube = GetComponent<Rigidbody>();
-        moves = 0;
         ismoving = false;
         scale = transform.localScale / 2.0f;
+        UImemory = GameObject.Find("UImemory");
+        UIScore score = UImemory.GetComponent<UIScore>();
+        moves = score.moves;
         moves_text = GameObject.Find("Moves_text").GetComponent<Text>();
         initial = gameObject.transform.rotation;
 
@@ -71,7 +73,7 @@ public class MovecuboidV3 : MonoBehaviour
         {
             is_controlled = !is_controlled;
         }
-        moves_text.text = "Moves: " + moves.ToString();
+        
 
         if((cube_animator != null) && (cube_animator.GetBool("is_enter") == true))
         {
@@ -121,13 +123,18 @@ public class MovecuboidV3 : MonoBehaviour
 
     void Rotate(Direction direction)
     {
+        UImemory = GameObject.Find("UImemory");
+        UIScore score = UImemory.GetComponent<UIScore>();
+        moves = score.moves;
         rotationDirection = direction;
         ismoving = true;
         finalRotation = 0;
         moves++;
+        score.moves = moves;
+        moves_text.text = "Moves: " + moves.ToString();
         //if (initial == Quaternion.identity)
         //{
-            switch (rotationDirection)
+        switch (rotationDirection)
             {
                 case Direction.East:
                 if (initial == Quaternion.identity)
@@ -171,22 +178,44 @@ public class MovecuboidV3 : MonoBehaviour
                     break;
                 }
             }
-            if ((rotationDirection == Direction.East) || (rotationDirection == Direction.West))
+            if ((rotationDirection == Direction.East) || (rotationDirection == Direction.West)  )
+            {
+                if (initial == Quaternion.identity)
+                {
+                    axis = Vector3.forward;
+                    float temp = scale.x;
+                    scale.x = scale.y;
+                    scale.y = temp;
+                }
+            else
             {
                 axis = Vector3.forward;
                 float temp = scale.x;
-                scale.x = scale.y;
-                scale.y = temp;
-            }
-            else /*if (initial == Quaternion.identity)*/
-            {
-                axis = Vector3.right;
-                float temp = scale.z;
-                scale.z = scale.y;
-                scale.y = temp;
+                scale.y = scale.y;
+                scale.x = temp;
             }
 
-        //}
+
+        }
+            else /*if rot dir north or south*/
+            {
+                if (initial == Quaternion.identity)
+                {
+                    axis = Vector3.right;
+                    float temp = scale.z;
+                    scale.z = scale.y;
+                    scale.y = temp;
+                }
+                else
+                {
+                    axis = Vector3.right;
+                    float temp = scale.y;
+                    scale.y = scale.z;
+                    scale.z = temp;
+                }
+
+            }
+
         
         
         

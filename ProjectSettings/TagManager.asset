@@ -18,6 +18,7 @@ TagManager:
   - cube2
   - raytarget1
   - raytarget2
+  - move_text
   layers:
   - Default
   - TransparentFX

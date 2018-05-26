@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8a44e8cf5a4c24e9cf048a0e430123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raylength: 0
+  raylength: 100
   cube1: {fileID: 0}
   cube2: {fileID: 0}
 --- !u!114 &114586573969315158
@@ -124,6 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8a44e8cf5a4c24e9cf048a0e430123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raylength: 0
+  raylength: 100
   cube1: {fileID: 0}
   cube2: {fileID: 0}

@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4746688434014458}
   - component: {fileID: 108490777383530414}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4792021469654056}
   - component: {fileID: 33885538080272020}
   - component: {fileID: 65999403192310652}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: faceBo
   m_TagString: cuboid_colliders
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4990104420174214}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: raytarget2
   m_TagString: raytarget2
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 4432105625047462}
   - component: {fileID: 33447230393559376}
   - component: {fileID: 65045485863791722}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: faceT
   m_TagString: cuboid_colliders
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 4561781980652310}
   - component: {fileID: 33525276317814108}
   - component: {fileID: 65357416060565182}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: faceBa1
   m_TagString: cuboid_colliders
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 4298242672142780}
   - component: {fileID: 33005173421458108}
   - component: {fileID: 65354355774687380}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: faceF1
   m_TagString: cuboid_colliders
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 4050330878225508}
   - component: {fileID: 33664375310176764}
   - component: {fileID: 65791677992067830}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: faceR1
   m_TagString: cuboid_colliders
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 4827849809626422}
   - component: {fileID: 33660785055185398}
   - component: {fileID: 65221068861188964}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: faceL1
   m_TagString: cuboid_colliders
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 54170785685703642}
   - component: {fileID: 114878614129992120}
   - component: {fileID: 114572563994188958}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: cube2
   m_TagString: cube2
   m_Icon: {fileID: 0}
@@ -525,8 +525,10 @@ MonoBehaviour:
   moves: 0
   moves_text: {fileID: 0}
   rotationSpeed: 350
+  ismoving: 0
   is_controlled: 0
   initialcolor: {r: 0, g: 0, b: 0, a: 0}
+  initial: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &114878614129992120
 MonoBehaviour:
   m_ObjectHideFlags: 1

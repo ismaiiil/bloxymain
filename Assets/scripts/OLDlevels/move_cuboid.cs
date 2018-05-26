@@ -27,29 +27,28 @@ public class move_cuboid : MonoBehaviour {
 
 	public int moves;
 	public Text moves_text;
+    private GameObject UImemory;
 
 
-	void Start () {
+    void Start () {
 
 		cube_enter = GetComponentInParent<Animator> ();
 		cube = GetComponent<Rigidbody> ();
 		scale = transform.lossyScale;
-		moves = 0;
+	    UImemory = GameObject.Find("UImemory");
+	    UIScore score = UImemory.GetComponent<UIScore>();
+	    moves = score.moves;
+        moves_text = GameObject.Find("Moves_text").GetComponent<Text>();
 
-	}
+
+    }
 
 
 	void Update () {
 
 		moves_text.text = "Moves: " + moves.ToString ();
 		
-		if (cube_enter.GetBool ("is_enter") == true) {
-			shouldmove = false;			
-		}
-		else if(cube.useGravity == true){
-			shouldmove = false;
-		}
-		else if(cube_enter.GetCurrentAnimatorStateInfo(0).IsName("cube_enter")){
+        if(cube.useGravity == true){
 			shouldmove = false;
 		}else {
 			shouldmove = true;
@@ -77,7 +76,12 @@ public class move_cuboid : MonoBehaviour {
 			setRadius();															
 			rotationTime = 0;															
 			isRotate = true;
-			moves++;
+		    UImemory = GameObject.Find("UImemory");
+		    UIScore score = UImemory.GetComponent<UIScore>();
+		    moves = score.moves;
+            moves++;
+
+		    score.moves = moves;
 		}
 	}
 

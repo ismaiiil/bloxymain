@@ -41,7 +41,7 @@ public class Playerfall : MonoBehaviour
         RaycastHit hit;
         Vector3 down = transform.TransformDirection(Vector3.down);
         Debug.DrawRay(transform.position, down * raylength);
-        if (Physics.Raycast(transform.position, down, out hit, raylength))
+        if (Physics.Raycast(transform.position,down, out hit, raylength))
         {
             //Debug.Log(hit.transform.name);
             if (player != null && hit.transform.tag == "deadzone")

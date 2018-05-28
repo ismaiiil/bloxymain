@@ -5,17 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class end_level : MonoBehaviour {
 	public GameObject player;
-	public bool nextlevel;
+	public string nextlevel;
+    public int levelToUnlock;
+    public SceneFader sceneFader;
+
 	// Use this for initialization
 	void Start () {
 		
 	}
-    //IEnumerator delaynextlevel (float time){
-    //	yield return new WaitForSeconds (time);
-    //	if (SceneManager.GetActiveScene().name == "level1") {
-    //		SceneManager.LoadScene ("level2");
-    //	}
-    //}
+
     IEnumerator Delayrestart(float time)
     {
         yield return new WaitForSeconds(time);
@@ -28,11 +26,14 @@ public class end_level : MonoBehaviour {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
 			player.GetComponent<Collider> ().isTrigger = false;
-            StartCoroutine(Delayrestart(1f));
-            //nextlevel = true;
-            //StartCoroutine ((delaynextlevel (1.5f)));
+            //StartCoroutine(Delayrestart(1f));
+            PlayerPrefs.SetInt("levelReached",levelToUnlock);
+            sceneFader.FadeTo(nextlevel);
+		    other.enabled = false;
+		    //nextlevel = true;
+		    //StartCoroutine ((delaynextlevel (1.5f)));
 
-        }
+		}
 	}
 
 

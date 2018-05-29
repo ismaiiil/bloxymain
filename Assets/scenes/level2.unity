@@ -6829,6 +6829,36 @@ Prefab:
       propertyPath: sceneFader
       value: 
       objectReference: {fileID: 1134123957}
+    - target: {fileID: 23713319628427006, guid: b6b791f4125267743bdf957b759f0718,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df8a438ce11fb544b89aba2f633443dc, type: 2}
+    - target: {fileID: 108919982678885774, guid: b6b791f4125267743bdf957b759f0718,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108919982678885774, guid: b6b791f4125267743bdf957b759f0718,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108919982678885774, guid: b6b791f4125267743bdf957b759f0718,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108919982678885774, guid: b6b791f4125267743bdf957b759f0718,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108919982678885774, guid: b6b791f4125267743bdf957b759f0718,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 3.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6b791f4125267743bdf957b759f0718, type: 2}
   m_IsPrefabParent: 0

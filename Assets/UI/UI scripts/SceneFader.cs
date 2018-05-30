@@ -34,7 +34,7 @@ public class SceneFader : MonoBehaviour
         {
             t -= Time.deltaTime;
             float a = curve.Evaluate(t);
-            img.color = new Color(0f,0f,0f, a);
+            img.color = new Color(0f, 0f, 0f, a);
             yield return 0;
         }
     }
@@ -69,3 +69,4 @@ public class SceneFader : MonoBehaviour
 
 
 }
+

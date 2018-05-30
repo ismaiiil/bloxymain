@@ -20742,10 +20742,10 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!114 &1605166436 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114414666954462810, guid: 6340cfd4a7092bd4a8ae8b8f2b222b86,
+  m_PrefabParentObject: {fileID: 114757311964050746, guid: 6340cfd4a7092bd4a8ae8b8f2b222b86,
     type: 2}
   m_PrefabInternal: {fileID: 1605166435}
-  m_Script: {fileID: 11500000, guid: 01f1088fcaec24b469deb520d6cf203f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a3d1830cf18bd749aac855c5f32001f, type: 3}
 --- !u!1 &1614797040
 GameObject:
   m_ObjectHideFlags: 0
@@ -22416,6 +22416,16 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114250403346563364, guid: 7afe00d5c12dfec40b91b1d39437e851,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114250403346563364, guid: 7afe00d5c12dfec40b91b1d39437e851,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeTo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7afe00d5c12dfec40b91b1d39437e851, type: 2}

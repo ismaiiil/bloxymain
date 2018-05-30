@@ -58,7 +58,7 @@ public class MovecuboidV3 : MonoBehaviour
         UImemory = GameObject.Find("UImemory");
         UIScore score = UImemory.GetComponent<UIScore>();
         moves = score.moves;
-        moves_text = GameObject.Find("Moves_text").GetComponent<Text>();
+        moves_text = GameObject.Find("MovesText").GetComponent<Text>();
         initial = gameObject.transform.rotation;
 
     }
@@ -90,6 +90,11 @@ public class MovecuboidV3 : MonoBehaviour
         else
         {
             shouldmove = true;
+        }
+
+        if (Time.timeScale == 0)
+        {
+            shouldmove = false;
         }
 
         if (ismoving)

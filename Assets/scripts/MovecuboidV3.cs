@@ -59,6 +59,7 @@ public class MovecuboidV3 : MonoBehaviour
         UIScore score = UImemory.GetComponent<UIScore>();
         moves = score.moves;
         moves_text = GameObject.Find("MovesText").GetComponent<Text>();
+        moves_text.text = "Moves: " + moves.ToString();
         initial = gameObject.transform.rotation;
 
     }

@@ -9,6 +9,7 @@ public class end_level : MonoBehaviour {
     public int levelToUnlock;
     public SceneFader sceneFader;
     public GameObject UImemory;
+    public GameObject Timer;
 
     // Use this for initialization
 	void Start () {
@@ -16,12 +17,14 @@ public class end_level : MonoBehaviour {
 	}
 
     void OnTriggerEnter(Collider other){
+        Timer = GameObject.Find("Timer");
         UImemory = GameObject.Find("UImemory");
         UIScore score = UImemory.GetComponent<UIScore>();
         if (other.gameObject.tag == "toporbot") {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
 			player.GetComponent<Collider> ().isTrigger = false;
+
 		    if (PlayerPrefs.GetInt("levelReached",1) < levelToUnlock)
 		    {
 		        PlayerPrefs.SetInt("levelReached", levelToUnlock);
@@ -33,6 +36,12 @@ public class end_level : MonoBehaviour {
                 PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, score.moves);
                 Debug.Log("score" + score.moves);
             }
+
+            if (Timer != null && Timer.activeSelf)
+            {
+                PlayerPrefs.SetString(SceneManager.GetActiveScene().name+"score","Yes");
+            }
+
 
             sceneFader.FadeTo(nextlevel);
 		    this.gameObject.GetComponent<Collider>().enabled = false;

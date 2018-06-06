@@ -12,6 +12,13 @@ public class Countdown : MonoBehaviour
     public float timeLeft;
     public SceneFader sceneFader;
     private GameObject UImemory;
+    public Button ChallengeButton;
+
+    public void SetTimerOn()
+    {
+        isTimerOn = true;
+        Timer.SetActive(true);
+    }
 
     // Use this for initialization
     void Start ()
@@ -23,11 +30,18 @@ public class Countdown : MonoBehaviour
 	void Update () {
 	    UImemory = GameObject.Find("UImemory");
 	    UIScore score = UImemory.GetComponent<UIScore>();
-        if ((Input.GetKeyDown(KeyCode.T) && !isTimerOn) && score.moves == 0)
+	    if (score.moves != 0)
+	    {
+	        ChallengeButton.gameObject.SetActive(false);
+
+	    }
+
+	    if ((Input.GetKeyDown(KeyCode.T) && !isTimerOn) && score.moves == 0)
 	    {
 	        isTimerOn = true;
             Timer.SetActive(true);
-	    }
+	        ChallengeButton.gameObject.SetActive(false);
+        }
 
 	    if (isTimerOn)
 	    {

@@ -12,11 +12,13 @@ public class ShowHighScores : MonoBehaviour
 	    {
 	        if (PlayerPrefs.GetInt("level" + (i + 1), 0) == 0)
 	        {
-	            text[i].text = "Level " + (i + 1) + " : " + "--" + " moves";
+	            text[i].text = "Level " + (i + 1) + " : " + "--" + " moves/ On Time: " 
+	                           + PlayerPrefs.GetString("level"+(i + 1) + "score","No");
             }
 	        else
 	        {
-	            text[i].text = "Level " + (i + 1) + " : " + PlayerPrefs.GetInt("level" + (i + 1), 0) + " moves";
+	            text[i].text = "Level " + (i + 1) + " : " + PlayerPrefs.GetInt("level" + (i + 1), 0) 
+	                           + " moves/ On Time: "+ PlayerPrefs.GetString("level" + (i + 1) + "score", "No");
             }
 
 	        

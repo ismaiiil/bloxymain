@@ -4787,6 +4787,7 @@ MonoBehaviour:
   nextlevel: level2
   levelToUnlock: 2
   sceneFader: {fileID: 2119586550}
+  UImemory: {fileID: 0}
 --- !u!1 &812892686
 GameObject:
   m_ObjectHideFlags: 0

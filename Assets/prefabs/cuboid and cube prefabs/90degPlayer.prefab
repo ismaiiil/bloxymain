@@ -190,7 +190,6 @@ GameObject:
   - component: {fileID: 4851804802633646}
   - component: {fileID: 33404046120744560}
   - component: {fileID: 65132669452336094}
-  - component: {fileID: 114041062579039232}
   m_Layer: 2
   m_Name: faceT
   m_TagString: toporbot
@@ -208,7 +207,6 @@ GameObject:
   - component: {fileID: 4219818012955936}
   - component: {fileID: 33463477616539062}
   - component: {fileID: 65906081438999678}
-  - component: {fileID: 114673514954249210}
   m_Layer: 2
   m_Name: faceBo
   m_TagString: toporbot
@@ -739,19 +737,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114041062579039232
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1652502014124036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817abc95efb166440b66df0eba358b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1499730397334824}
-  nextlevel: 0
 --- !u!114 &114407478594829640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -766,19 +751,6 @@ MonoBehaviour:
   player: {fileID: 1499730397334824}
   cube_enter: {fileID: 0}
   falls: 0
---- !u!114 &114673514954249210
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1862274726669822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817abc95efb166440b66df0eba358b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1499730397334824}
-  nextlevel: 0
 --- !u!114 &114962549342984152
 MonoBehaviour:
   m_ObjectHideFlags: 1

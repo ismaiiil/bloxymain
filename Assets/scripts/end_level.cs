@@ -14,24 +14,20 @@ public class end_level : MonoBehaviour {
 		
 	}
 
-    IEnumerator Delayrestart(float time)
-    {
-        yield return new WaitForSeconds(time);
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
-
-    }
     void OnTriggerEnter(Collider other){
-		if (other.gameObject.tag == "tile_end") {
+		if (other.gameObject.tag == "toporbot") {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
 			player.GetComponent<Collider> ().isTrigger = false;
-            //StartCoroutine(Delayrestart(1f));
-            PlayerPrefs.SetInt("levelReached",levelToUnlock);
+		    if (PlayerPrefs.GetInt("levelReached",1) < levelToUnlock)
+		    {
+		        PlayerPrefs.SetInt("levelReached", levelToUnlock);
+            }
+  
             sceneFader.FadeTo(nextlevel);
-		    other.enabled = false;
-		    //nextlevel = true;
-		    //StartCoroutine ((delaynextlevel (1.5f)));
+		    this.gameObject.GetComponent<Collider>().enabled = false;
+     
+            Debug.Log("change level to " + nextlevel );
 
 		}
 	}
@@ -40,6 +36,7 @@ public class end_level : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        player = GameObject.FindGameObjectWithTag("Player");
 		
 	}
 }

@@ -70,7 +70,6 @@ GameObject:
   - component: {fileID: 4767676385495506}
   - component: {fileID: 33245809395159878}
   - component: {fileID: 65815619430803440}
-  - component: {fileID: 114074951199562566}
   m_Layer: 2
   m_Name: faceBo
   m_TagString: toporbot
@@ -226,7 +225,6 @@ GameObject:
   - component: {fileID: 4243743600228758}
   - component: {fileID: 33244150194627756}
   - component: {fileID: 65693738084950724}
-  - component: {fileID: 114823590742917656}
   m_Layer: 2
   m_Name: faceT
   m_TagString: toporbot
@@ -366,7 +364,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1749676253709734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.154, y: -0.2, z: -6.595}
+  m_LocalPosition: {x: 0.51, y: -0.14, z: -2.996}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children:
   - {fileID: 4491413784406086}
@@ -490,7 +488,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 533f176b6292e514ab730e1812fa0fcd, type: 2}
+  - {fileID: 2100000, guid: 42fe0a45b3b2e124186a490a4561a4ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -820,19 +818,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube_enter: {fileID: 0}
---- !u!114 &114074951199562566
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1297278580294112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817abc95efb166440b66df0eba358b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1749676253709734}
-  nextlevel: 0
 --- !u!114 &114105466155725210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -847,16 +832,3 @@ MonoBehaviour:
   player: {fileID: 1749676253709734}
   cube_enter: {fileID: 0}
   falls: 0
---- !u!114 &114823590742917656
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1857313389350838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817abc95efb166440b66df0eba358b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1749676253709734}
-  nextlevel: 0

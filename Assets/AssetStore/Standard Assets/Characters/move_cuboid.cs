@@ -38,7 +38,7 @@ public class move_cuboid : MonoBehaviour {
 	    UImemory = GameObject.Find("UImemory");
 	    UIScore score = UImemory.GetComponent<UIScore>();
 	    moves = score.moves;
-        moves_text = GameObject.Find("Moves_text").GetComponent<Text>();
+        moves_text = GameObject.Find("MovesText").GetComponent<Text>();
 
 
     }
@@ -53,7 +53,13 @@ public class move_cuboid : MonoBehaviour {
 		}else {
 			shouldmove = true;
 		}
-		float x = 0;
+
+	    if (Time.timeScale == 0)
+	    {
+	        shouldmove = false;
+	    }
+
+	    float x = 0;
 		float y = 0;
 
 		if (shouldmove){

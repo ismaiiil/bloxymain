@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23353913008196204}
   - component: {fileID: 54107518336248996}
   - component: {fileID: 65379480439396162}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wood plank 2 (6)
   m_TagString: wood
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 23741613724588660}
   - component: {fileID: 54192403187013740}
   - component: {fileID: 65207913210610632}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wood plank 2 (3)
   m_TagString: wood
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 23322576938874048}
   - component: {fileID: 54270130767745270}
   - component: {fileID: 65172481839731730}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wood plank 2 (2)
   m_TagString: wood
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 23449519198841980}
   - component: {fileID: 54458281675041868}
   - component: {fileID: 65392480361259134}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wood plank 2 (7)
   m_TagString: wood
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 23510585377234752}
   - component: {fileID: 54919048488212254}
   - component: {fileID: 65115862036637152}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wood plank 2 (1)
   m_TagString: wood
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 23211603962388886}
   - component: {fileID: 54726351954363906}
   - component: {fileID: 65435674414022920}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wood plank 2 (5)
   m_TagString: wood
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 23855137579927778}
   - component: {fileID: 54249314239563304}
   - component: {fileID: 65386398559143864}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wood plank 2 (4)
   m_TagString: wood
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 23338714317854326}
   - component: {fileID: 54440904967970184}
   - component: {fileID: 65560595505791116}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wood plank 2
   m_TagString: wood
   m_Icon: {fileID: 0}
@@ -918,5 +918,3 @@ MonoBehaviour:
   player: {fileID: 0}
   wood: {fileID: 1612117172883542, guid: 316f15213098d3848b7e98cfb7ceaca5, type: 2}
   woodcopy: {fileID: 0}
-  originalposition: {x: -0.02, y: -0.6032, z: 1.4924656}
-  originalquaternion: {x: -0, y: -0, z: -0, w: 1}

@@ -11,16 +11,19 @@ public class Countdown : MonoBehaviour
     public GameObject Timer;
     public float timeLeft;
     public SceneFader sceneFader;
+    private GameObject UImemory;
 
     // Use this for initialization
     void Start ()
     {
-
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
-	    if (Input.GetKeyDown(KeyCode.T) && !isTimerOn)
+	    UImemory = GameObject.Find("UImemory");
+	    UIScore score = UImemory.GetComponent<UIScore>();
+        if ((Input.GetKeyDown(KeyCode.T) && !isTimerOn) && score.moves == 0)
 	    {
 	        isTimerOn = true;
             Timer.SetActive(true);

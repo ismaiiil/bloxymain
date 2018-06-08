@@ -3197,7 +3197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4239888381114082}
   m_Layer: 0
-  m_Name: level 3 background
+  m_Name: world3 background
   m_TagString: deadzone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

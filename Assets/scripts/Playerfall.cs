@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Playerfall : MonoBehaviour
 {
@@ -49,7 +50,15 @@ public class Playerfall : MonoBehaviour
                 player.GetComponent<Rigidbody>().useGravity = true;
                 player.GetComponent<Rigidbody>().isKinematic = false;
                 player.GetComponent<Collider>().isTrigger = false;
+                StartCoroutine(Delayrestart(1.0f));
             }
         }
+    }
+    IEnumerator Delayrestart(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+
     }
 }

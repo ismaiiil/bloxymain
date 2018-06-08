@@ -14,8 +14,7 @@ public class dead_respawn : MonoBehaviour {
 	void OnCollisionEnter(Collision other){
 		
 		if ((other.gameObject.tag == "deadzone") && !falls) {
-            StartCoroutine(Delayrestart(1f));
-            //StartCoroutine ((Delayresp (1.0f)));
+            //StartCoroutine(Delayrestart(1f));
             falls = true;
 			
 		
@@ -28,26 +27,8 @@ public class dead_respawn : MonoBehaviour {
 		}
 	}
 
-    IEnumerator Delayrestart(float time)
-    {
-        yield return new WaitForSeconds(time);
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
-
-    }
-    IEnumerator Delayresp (float time)
-	{
-		yield return new WaitForSeconds (time);
-		player.GetComponent<Rigidbody> ().useGravity = false;
-		player.GetComponent<Rigidbody> ().isKinematic = true;
-		player.transform.position = new Vector3 (0.495f, -0.165f, -2.993f);
-		player.transform.localEulerAngles = new Vector3 (0, 0, 0);
-		player.GetComponent<Collider> ().isTrigger = true;
-		cube_enter.SetBool ("is_enter", true);
-		//Debug.Log ("cube enter true");
 
 
-	}
 }
 	
 	// Update is called once per frame

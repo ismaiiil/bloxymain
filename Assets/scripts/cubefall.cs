@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class cubefall : MonoBehaviour {
     Transform point1;
@@ -13,7 +14,13 @@ public class cubefall : MonoBehaviour {
     {
         raylength = 100;
     }
+    IEnumerator Delayrestart(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -56,6 +63,7 @@ public class cubefall : MonoBehaviour {
                     cube1.GetComponent<Rigidbody>().useGravity = true;
                     cube1.GetComponent<Rigidbody>().isKinematic = false;
                     cube1.GetComponent<Collider>().isTrigger = false;
+                    StartCoroutine(Delayrestart(1.0f));
                     cube1 = null;
                 }
             }
@@ -73,6 +81,7 @@ public class cubefall : MonoBehaviour {
                     cube2.GetComponent<Rigidbody>().useGravity = true;
                     cube2.GetComponent<Rigidbody>().isKinematic = false;
                     cube2.GetComponent<Collider>().isTrigger = false;
+                    StartCoroutine(Delayrestart(1.0f));
                     cube2 = null;
                 }
             }

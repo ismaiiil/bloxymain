@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44655287, g: 0.4963857, b: 0.574804, a: 1}
+  m_IndirectSpecularColor: {r: 0.16890073, g: 0.39679265, b: 0.21124801, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4682,6 +4682,10 @@ Prefab:
       propertyPath: cube2destinationtile
       value: 
       objectReference: {fileID: 537808194}
+    - target: {fileID: 4930910451212776, guid: 119c052b861b6f14dbdafcc6abbc7d56, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.632
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 119c052b861b6f14dbdafcc6abbc7d56, type: 2}
   m_IsPrefabParent: 0

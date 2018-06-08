@@ -36,7 +36,7 @@ MonoBehaviour:
         preset: 2
       taaSettings:
         jitterSpread: 0.75
-        sharpen: 0.3
+        sharpen: 0.4
         stationaryBlending: 0.95
         motionBlending: 0.85
   ambientOcclusion:

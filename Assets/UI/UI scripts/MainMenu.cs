@@ -8,16 +8,6 @@ public class MainMenu : MonoBehaviour
 {
     public SceneFader fader;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     public void PlayGame()
     {
         fader.FadeToIndex(PlayerPrefs.GetInt("levelReached",1));

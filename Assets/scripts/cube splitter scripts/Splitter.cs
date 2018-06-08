@@ -21,12 +21,21 @@ public class Splitter : MonoBehaviour {
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "toporbot") {
-            Destroy(GameObject.FindGameObjectWithTag("Player"),0.5f);
-            cube1 = Instantiate(cube1prefab, cube1destinationtile.transform.position + new Vector3(0,above), Quaternion.identity);
-            cube2 = Instantiate(cube2prefab, cube2destinationtile.transform.position + new Vector3(0, above), Quaternion.identity);
+        if (other.gameObject.tag == "toporbot")
+        {
+            StartCoroutine(DestroyInstantiate());
         }
         
+    }
+
+    IEnumerator DestroyInstantiate()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        Destroy(player, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        cube1 = Instantiate(cube1prefab, cube1destinationtile.transform.position + new Vector3(0, above), Quaternion.identity);
+        cube2 = Instantiate(cube2prefab, cube2destinationtile.transform.position + new Vector3(0, above), Quaternion.identity);
+
     }
 
     // Update is called once per frame

@@ -10,10 +10,15 @@ public class end_level : MonoBehaviour {
     public SceneFader sceneFader;
     public GameObject UImemory;
     public GameObject Timer;
+    public Light lt;
+    public bool fade;
 
     // Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+	    sceneFader = GameObject.Find("SceneFader").GetComponent<SceneFader>();
+	    lt = GameObject.Find("end_light").GetComponent<Light>();
+
 	}
 
     void OnTriggerEnter(Collider other){
@@ -23,7 +28,9 @@ public class end_level : MonoBehaviour {
         if (other.gameObject.tag == "toporbot") {
 			player.GetComponent<Rigidbody>().useGravity = true;
 			player.GetComponent<Rigidbody>().isKinematic = false;
-			player.GetComponent<Collider> ().isTrigger = false;
+            player.GetComponent<Rigidbody>().drag = 10;
+            player.GetComponent<Collider> ().isTrigger = false;
+            fade = true;
 
 		    if (PlayerPrefs.GetInt("levelReached",1) < levelToUnlock)
 		    {
@@ -56,6 +63,9 @@ public class end_level : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         player = GameObject.FindGameObjectWithTag("Player");
-		
+	    if (fade)
+	    {
+	        lt.intensity += 10.0f;
+        }
 	}
 }

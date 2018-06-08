@@ -45,7 +45,7 @@ public class break_wood : MonoBehaviour
     {
         player.GetComponent<Rigidbody>().useGravity = true;
         player.GetComponent<Rigidbody>().isKinematic = false;
-        player.GetComponent<Collider>().isTrigger = true;
+        player.GetComponent<Collider>().isTrigger = false;
     }
 
     void makewoodfall() {

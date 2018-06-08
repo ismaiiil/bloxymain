@@ -648,12 +648,12 @@ Prefab:
     - target: {fileID: 114037354478019696, guid: ad14a1be65c99b147bc60d00259d5678,
         type: 2}
       propertyPath: nextlevel
-      value: level5
+      value: level6
       objectReference: {fileID: 0}
     - target: {fileID: 114037354478019696, guid: ad14a1be65c99b147bc60d00259d5678,
         type: 2}
       propertyPath: levelToUnlock
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 23298846133738148, guid: ad14a1be65c99b147bc60d00259d5678,
         type: 2}

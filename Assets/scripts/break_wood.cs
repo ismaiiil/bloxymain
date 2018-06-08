@@ -21,7 +21,7 @@ public class break_wood : MonoBehaviour
     {
         if ((other.gameObject.tag == "toporbot"))
         {
-            
+            player = GameObject.FindGameObjectWithTag("Player");
             makewoodfall();
             makeplayerfall();
             StartCoroutine(Delayrestart(1f));
